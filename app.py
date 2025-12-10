@@ -196,7 +196,7 @@ if step == 3:
 
     st.write("### Subset Entropies:")
     for val, subset in subsets.items():
-        c = subset["play"].value.value_counts().to_dict()
+        c = subset["play"].value_counts().to_dict()
         st.write(f"**{val}** → {c}, Entropy = {entropy(c):.4f}")
 
     st.write("---")
